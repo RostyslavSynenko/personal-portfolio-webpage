@@ -71,10 +71,17 @@ main #projects h2 {
     border-bottom: 2px solid white;
 }
 
+main #projects .container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 main #projects a {
     display: block;
     max-width: 30%;
     height: 30%;
+    margin: 15px;
     text-decoration: none;
     color: white;
     border: 1px solid black;
