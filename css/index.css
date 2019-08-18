@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap');
 
 body {
+    box-sizing: border-box;
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
@@ -57,8 +58,9 @@ main #welcome-section p {
 }
 
 main #projects {
-    padding-top: 50px;
+    padding: 80px 0;
     background-color: #45567d;
+    text-align: center;
 }
 
 main #projects h2 {
@@ -66,7 +68,6 @@ main #projects h2 {
     margin: 0 auto 30px auto;
     padding: 10px;
     font-size: 40px;
-    text-align: center;
     color: white;
     border-bottom: 2px solid white;
 }
@@ -84,7 +85,7 @@ main #projects a {
     margin: 15px;
     text-decoration: none;
     color: white;
-    border: 1px solid black;
+    border: 1px solid rgb(32, 32, 32);
     background-color: rgb(32, 32, 32);
 }
 
@@ -93,9 +94,132 @@ main #projects img {
 }
 
 main #projects p {
-    height: 30px;
+    height: 40px;
     margin: 0;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
+}
+
+main #projects .container-projects .project-tile .code {
+    color: rgb(218, 131, 32);
+    opacity: 0;
+}
+
+main #projects .container-projects .project-tile:hover .code {
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+main #projects .show-all-btn {
+    display: block;
+    height: 40px;
+    width: 140px;
+    margin: 30px auto 30px auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+main #projects .show-all-btn span {
+    font-size: 30px;
+    padding-left: 5px;
+    left: 0;
+}
+
+main #projects .show-all-btn:hover {
+    background-color: rgb(194, 49, 49);
+    transition-duration: 0.5s;
+}
+
+main #projects .show-all-btn:hover span {
+    position: relative;
+    left: 5px;
+    transition-duration: 1s;
+}
+
+main #contacts {
+    padding: 80px 0 150px 0;
     text-align: center;
+    color: white;
+    background-color: rgb(32, 32, 32);
+}
+
+main #contacts h2 {
+    margin: 0;
+    font-size: 50px;
+}
+
+main #contacts p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+main #contacts .social-media {
+    margin-top: 50px;
+}
+
+main #contacts .social-media a {
+    display: inline-block;
+    top: 0;
+    padding: 8px 35px 8px 35px;
+    font-size: 25px;
+    filter: drop-shadow(2px 2px 1px black);
+    color: white;
+    text-decoration: none;
+}
+
+main #contacts .social-media a:hover {
+    position: relative;
+    top: 8px;
+    transition-duration: 0.3s;
+}
+
+main #contacts .social-media .linkedin-link {
+    background: url('../img/linkedin.svg') 0 center no-repeat;
+    background-size: 25px 25px;
+}
+
+main #contacts .social-media .github-link {
+    background: url('../img/github.svg') 0 center no-repeat;
+    background-size: 25px 25px;
+}
+
+main #contacts .social-media .skype-link {
+    background: url('../img/skype.svg') 0 center no-repeat;
+    background-size: 25px 25px;
+}
+
+main #contacts .social-media .email-link {
+    background: url('../img/email.svg') 0 center no-repeat;
+    background-size: 25px 25px;
+}
+
+main #contacts .social-media .phone-link {
+    padding-left: 30px;
+    background: url('../img/phone.svg') 0 center no-repeat;
+    background-size: 25px 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    background-color: rgb(32, 32, 32);
+    border-top: 4px solid  rgb(194, 49, 49);
+    color: white;
+}
+
+@media (max-width: 980px) {
+    main #projects a {
+        max-width: 40%;
+    }
 }
